@@ -1,5 +1,5 @@
 const express = require('express')
-const mainRouter = require('./routes/server')
+const mainRouter = require('./routes/server.js')
 const bodyParser = require('body-parser')
 const app = express()
 const path = require('path')
@@ -9,7 +9,7 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 
-app.use('/blog', mainRouter)
+app.use('/', mainRouter)
 
 
 

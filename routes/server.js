@@ -3,11 +3,11 @@ const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
 const router = express.Router()
 const { registerUser, loginUser } = require('../controllers/controller')
-const connectionString = process.env.MONGODB_URL
+const connectionString = process.env.MONGODBURL
 
 const app = express()
 
-app.set('view engine', 'ejs');
+
 
 
 mongoDbServer()
