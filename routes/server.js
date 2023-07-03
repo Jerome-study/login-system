@@ -20,7 +20,7 @@ async function mongoDbServer () {
         
        
         
-        router.get('/', async (req,res) => {
+        router.get('/blog', async (req,res) => {
             res.render('index')
         })
 
