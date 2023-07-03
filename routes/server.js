@@ -7,6 +7,7 @@ const connectionString = process.env.MONGODB_URL
 
 const app = express()
 
+app.set('view engine', 'ejs');
 
 
 mongoDbServer()
