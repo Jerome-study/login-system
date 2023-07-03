@@ -6,7 +6,7 @@ const { registerUser, loginUser } = require('../controllers/controller')
 const connectionString = process.env.MONGODB_URL
 
 const app = express()
-app.use(express.static('public'))
+
 
 
 mongoDbServer()
